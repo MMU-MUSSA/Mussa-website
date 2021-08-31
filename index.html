@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- This is the html initializing file -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mussa</title>
+
+    <style>
+      /* This style is just default styling */
+      body {
+        border: 1px solid red;
+        margin: 0;
+        overflow: none;
+        background-color: lightgrey;
+      }
+      #vbar {
+        position: absolute;
+        height: 99.4%;
+        width: 7%;
+        border-right: 3px solid #ffff;
+        border-left: 0px;
+      }
+      i {
+        color: lightgrey;
+      }
+      #logo {
+        width: 99%;
+        min-height: 150px;
+        border: 1px solid red;
+      }
+
+      #social_bar {
+        position: absolute;
+        width: 99%;
+        bottom: 0px;
+        min-height: 150px;
+        border: 1px solid red;
+      }
+      #nav_bar {
+        float: right;
+        min-width: 50%;
+        margin: 10px 10px 0px 0px;
+        min-height: 50px;
+        border: 1px solid red;
+      }
+      #nav_bar::after {
+        clear: both;
+      }
+      #welcome {
+        border: 1px solid red;
+        float: right;
+        position: absolute;
+        right: 3px;
+        margin-top: 150px;
+        min-width: 450px;
+        min-height: 250px;
+      }
+      #bg_nav {
+        border: 1px solid red;
+        min-height: 150px;
+        width: 100px;
+        margin-top: 18%;
+        margin-left: 8%;
+      }
+      #news_strip {
+        border: 1px solid red;
+        min-height: 200px;
+        position: absolute;
+        bottom: 0;
+        margin-left: 7.1%;
+        width: 92.5%;
+      }
+    </style>
+  </head>
+  <body id="main_body">
+    <!-- The whole background styling goes here -->
+
+    <i
+      style="
+        border: 1px solid lightgrey;
+        padding: 2px 10px 2px 10px;
+        color: grey;
+        margin-left: 15%;
+        position: absolute;
+      "
+      >Note: All paragraphs in a red box are temporary</i
+    >
+    <div id="vbar">
+      <div id="logo">
+        <i></i>
+      </div>
+
+      <div id="social_bar">
+        <i></i>
+      </div>
+    </div>
+
+    <div id="nav_bar"></div>
+    <div id="welcome"></div>
+    <div id="bg_nav"></div>
+    <div id="news_strip"></div>
+  </body>
+  <script>
+    var screenHeight = window.innerHeight;
+    screenHeight = screenHeight - 2;
+    var mainBody = document.getElementById("main_body");
+
+    mainBody.style.minHeight = screenHeight + "px";
+  </script>
+</html>
