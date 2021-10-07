@@ -6,7 +6,7 @@ The link for the website designs and user interface
 https://www.figma.com/proto/gCGMigxrF7WR7qmCU1hKMO/Mussa-Website-New-Proporsal?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1
 
 ## React Preview
-navigate to the `web` folder
+navigate to the `mussa-fe` folder
 run 
 ### `npm start`
 
