@@ -6,12 +6,20 @@
 }
 .App {
   /* position: absolute; */
-  background: url(./images/Rectangle.png);
-  display: flex;
-  flex-direction: row;
-  background-size: cover;
-  height: 115vh;
-  background-repeat: no-repeat;
+  background: url(./resources/images/Rectangle.png)
+  ;
   background-position: center;
-  
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 279px){
+    .App{
+        display: none !important;
+    }
 }

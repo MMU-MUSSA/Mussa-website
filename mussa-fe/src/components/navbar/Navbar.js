@@ -3,14 +3,20 @@ import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
 
 export class Navbar extends Component {
-  state = { clicked: false }
-  
+  state = { clicked: false };
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
 
   render() {
     return (
-      <div className="NavbarItems">
-        <div className="menu-icon"></div>
-        <ul class="ul">
+      <nav className="NavbarItems">
+        <div className="menu-icon" onClick={this.handleClick}>
+          <i
+            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+          ></i>
+        </div>
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
@@ -24,7 +30,7 @@ export class Navbar extends Component {
             );
           })}
         </ul>
-      </div>
+      </nav>
     );
   }
 }

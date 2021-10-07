@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import ellipse from "./ellipse.png";
-import twitter from "../images/twitter.svg";
-import linkedin from "../images/linkedin/2.svg";
-import facebook from "../images/facebook.svg";
-import youtube from "../images/youtube/1.svg";
-import github from "../images/github.svg";
+import ellipse from "../../resources/images/ellipse.png";
+import twitter from "../../resources/icons/twitter.svg";
+import linkedin from "../../resources/icons/linkedin.svg";
+import facebook from "../../resources/icons/facebook.svg";
+import youtube from "../../resources/icons/youtube.svg";
+import github from "../../resources/icons/github.svg";
 
 import "./Navleft.css";
 
@@ -21,8 +21,13 @@ export class Navleft extends Component {
           <br />
           SSA
         </div>
-        <div className="social-bar">
-          <img className="links" src={twitter} alt="twitter" onClick="twitter()"/>
+        <div className="social">
+          <img
+            className="links"
+            src={twitter}
+            alt="twitter"
+            onClick="twitter()"
+          />
           <img className="links" src={linkedin} alt="linkedin" />
           <img className="links" src={facebook} alt="facebook" />
           <img className="links" src={youtube} alt="youtube" />

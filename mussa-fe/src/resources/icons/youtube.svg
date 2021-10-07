@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="youtube.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="16.0625"
+     inkscape:cx="16"
+     inkscape:cy="16"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       style="fill:none"
+       id="g18"
+       transform="translate(4.1620051,3.7932228)">
+      <path
+         d="M 22.54,6.42 C 22.4212,5.94541 22.1793,5.51057 21.8387,5.15941 21.498,4.80824 21.0708,4.55318 20.6,4.42 18.88,4 12,4 12,4 12,4 5.12002,4 3.40002,4.46 2.92927,4.59318 2.502,4.84824 2.16137,5.19941 1.82074,5.55057 1.57881,5.98541 1.46002,6.46 c -0.31478,1.74556 -0.468762,3.51631 -0.46,5.29 -0.011218,1.787 0.14277,3.5713 0.46,5.33 0.13096,0.4598 0.37831,0.8781 0.71815,1.2145 C 2.518,18.6308 2.93884,18.8738 3.40002,19 5.12002,19.46 12,19.46 12,19.46 c 0,0 6.88,0 8.6,-0.46 0.4708,-0.1332 0.898,-0.3882 1.2387,-0.7394 C 22.1793,17.9094 22.4212,17.4746 22.54,17 22.8524,15.2676 23.0063,13.5103 23,11.75 23.0112,9.96295 22.8573,8.1787 22.54,6.42 Z"
+         stroke="#ffffff"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path9" />
+    </g>
+    <g
+       style="fill:none"
+       id="g29"
+       transform="translate(12.187756,11.029484)">
+      <path
+         d="M 1,7.54 6.75,4.27 1,1 Z"
+         stroke="#ffffff"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path20" />
+    </g>
+  </g>
+</svg>

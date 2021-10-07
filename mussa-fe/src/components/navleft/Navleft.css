@@ -16,21 +16,21 @@
   background-color: transparent; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
-  border-right: 1px solid white;
+  border-right: 1px solid transparent;
 }
 
 .nav-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
 }
 .nav-text {
   /* MUSSA */
   text-align: center;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 36px;
   line-height: 94.9%;
   /* or 34px */
@@ -39,7 +39,7 @@
   color: #ffffff;
 }
 
-.social-bar {
+.social{
   color: white;
   position: absolute;
   display: flex;
@@ -56,3 +56,16 @@
   margin-top: 26px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 540px){
+    .NavleftItems{
+        width: 80px;
+    }
+    .nav-image{
+        width: 60%;
+    }
+    .nav-text{
+        font-size: 30px;
+    }
+}
+
