@@ -84,9 +84,9 @@ li:hover > hr {
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: 0px;
+            height: 500px;
             position: absolute;
-            top: 30px;
+            top: 40px;
             left: -110%;
             opacity: 1;
             transition: all 0.3s ease;
@@ -99,7 +99,7 @@ li:hover > hr {
         }
     
         .nav-links {
-            margin-left: 80px;
+            margin-left: 90px;
             text-align: center;
             padding: 34px;
             width: 60vw;
@@ -119,17 +119,19 @@ li:hover > hr {
             position: absolute;
             top: 0;
             right: 0;
-            transform: translate(-20%, 50%);
+            transform: translate(-20%, 20%);
             font-size: 1.8rem;
             cursor: pointer;
         }
     
         .fa-bars{
             color: #f9f9f9;
+            background-color: transparent;
         }
-    
+
         .fa-times{
             color: #fff;
+            background-color: transparent;
         }
     
         li > hr{
@@ -144,7 +146,7 @@ li:hover > hr {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 0px;
+        height: 500px;
         position: absolute;
         top: 80px;
         left: -110%;
@@ -187,10 +189,12 @@ li:hover > hr {
 
     .fa-bars{
         color: #f9f9f9;
+        background-color: transparent;
     }
 
     .fa-times{
         color: #fff;
+        background-color: transparent;
     }
 
     li > hr{
