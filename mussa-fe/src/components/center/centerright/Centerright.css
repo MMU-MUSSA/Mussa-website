@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 540px){
      .header {
-        width: 20vw;
+        width: 70vw;
         font-size: 20px;
     }
     .ha{
@@ -52,6 +52,6 @@
 }
 @media screen and (min-width: 540px) and (max-width: 960px) {
     .header {
-        width: 14vw;
+        width: 66vw;
     }
 }
