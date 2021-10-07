@@ -1,0 +1,17 @@
+.science{
+    color:aqua;
+    font-size: 24px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.science .sci{
+    color:aqua;
+    font-size: 30px;
+}
+.science .info{
+    margin-top: 5px;
+    color:aqua;
+    font-weight: lighter;
+    font-size: 15px;
+}

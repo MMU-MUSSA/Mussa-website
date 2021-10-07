@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+.NavbarItems {
+  background: transparent;
+  top: 0px;
+  position: fixed;
+  height: 2.5%;
+  width: 90%;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.ul {
+  background-color: transparent;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+}
+li {
+  color: black;
+  list-style: none;
+  margin-right: 20px;
+}
+
+li > span {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+li > hr {
+  opacity: 0;
+  transition: width 0.7s ease-in;
+  width: 50%;
+  border-style: none;
+  background:red;
+  height: 2px;
+  margin: 18px 20px ;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+li:hover > hr {
+  opacity: 1;
+  margin: 18px 20px;
+  width: 50%;
+  float: center;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 112.9%;
+}

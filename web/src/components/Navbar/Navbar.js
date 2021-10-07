@@ -1,16 +1,34 @@
+/*import React from "react";
+
+export default function Navbar(){
+  return(
+    <div className="navbar">
+      <div className="aside">aside</div>
+      <div className="header">header</div>
+    </div>
+  );
+}*/
+
+
 import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
-import "./Navbar.css";
+import "../../styles/Navbar.css";
 
-export class Navbar extends Component {
+const styles = {
+  header: {
+    backgroundColor: "blue"
+  }
+}
+
+class Navbar extends Component {
   state = { clicked: false }
   
 
   render() {
     return (
       <div className="NavbarItems">
-        <div className="menu-icon"></div>
-        <ul class="ul">
+        <div className="menu-icon">sd</div>
+        <ul className="ul">
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>

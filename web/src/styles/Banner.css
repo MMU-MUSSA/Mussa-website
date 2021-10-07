@@ -1,0 +1,40 @@
+.banner{
+    height: 30%;
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    color:#ffffff;
+}
+.banner i{
+    cursor: pointer;
+}
+.banner b{
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all .5s ease-in;
+}
+.banner b:hover{
+    opacity: 1;
+}
+.banner .scroll{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.banner .next{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bright{
+    opacity: 1 !important;
+    color:#ffffff;
+}
+
+.banner img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
