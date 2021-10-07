@@ -20,8 +20,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## TODO's:
 - [x] create react app
 - [x] create components
-- [o] state and state management
-- [o] refactor code with index file
+- [ ] state and state management
+- [ ] refactor code with index file
 - [ ] connect to dom-router
 
 
