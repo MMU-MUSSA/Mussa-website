@@ -6,9 +6,7 @@ export class Events extends Component {
   render() {
     return (
       <div className="events">
-        <div className="eventsnil">
-          <p>s</p>
-        </div>
+        <div className="eventsnil"></div>
         <div className="events1">
           <>
             <h className="title">EVENTS</h>

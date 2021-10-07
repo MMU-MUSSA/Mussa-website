@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 960px){
     .NavleftItems{
         width: 80px;
     }
@@ -66,6 +66,10 @@
     }
     .nav-text{
         font-size: 30px;
+    }
+    .social{
+        position: fixed;
+        right: 42%;
     }
 }
 
