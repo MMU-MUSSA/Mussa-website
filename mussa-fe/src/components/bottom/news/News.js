@@ -6,7 +6,7 @@ export class News extends Component {
     return (
       <div className="news">
         <>
-          <h className="title">NEWS</h>
+          <p className="title">NEWS</p>
           <p className="content">
             A fresh take on our Active teams / now also ranked in{" "}
             <span>Red</span>

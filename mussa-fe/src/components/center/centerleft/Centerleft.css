@@ -16,13 +16,13 @@
     height: 2px;
 }
 
-.centerleft list{
+.centerleft b{
     cursor: pointer;
     opacity: 0.3;
     transition: all .5s ease-in;
 }
 
-.centerleft list:hover{
+.centerleft b:hover{
     opacity: 0.5;
 }
 

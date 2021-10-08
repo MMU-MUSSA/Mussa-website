@@ -9,19 +9,19 @@ export class Events extends Component {
         <div className="eventsnil"></div>
         <div className="events1">
           <>
-            <h className="title">EVENTS</h>
-            <h className="about">Back to school event / @mussa</h>
-            <h className="when">SF - sat, June 19 / 11 pm - 2 am</h>
+            <p className="title">EVENTS</p>
+            <p className="about">Back to school event / @mussa</p>
+            <p className="when">SF - sat, June 19 / 11 pm - 2 am</p>
           </>
           <div className="dots">
-            <i class="fas fa-circle faselected"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
+            <i className="fas fa-circle faselected"></i>
+            <i className="fas fa-circle"></i>
+            <i className="fas fa-circle"></i>
           </div>
         </div>
         <div className="events2">
-          <h className="about">Pop - up 13th event / @mussa</h>
-          <h className="when when-offset">SF - mon, July 3 / 6 pm - 6 am</h>
+          <p className="about">Pop - up 13th event / @mussa</p>
+          <p className="when when-offset">SF - mon, July 3 / 6 pm - 6 am</p>
         </div>
         <div className="newsEvents">
           <News />

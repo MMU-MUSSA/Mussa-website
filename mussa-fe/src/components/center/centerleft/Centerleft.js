@@ -1,4 +1,4 @@
-import React, { Component, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import "./Centerleft.css";
 import upIcon from "../../../resources/icons/up.svg";
 import downIcon from "../../../resources/icons/down.svg";
@@ -52,9 +52,9 @@ export default function Centerleft() {
       </>
       <div className="listItems">
         {listItems.map((item) => (
-          <list className={value === item.id ? "active" : ""} key={item.id}>
+          <b className={value === item.id ? "active" : ""} key={item.id}>
             {item.text}
-          </list>
+          </b>
         ))}
       </div>
     </div>

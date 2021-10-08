@@ -39,10 +39,10 @@ export default function Navleft() {
             }
           >
 */}
-        {listNav.map((item) => {
-          console.log(Object.keys(item.icon).map((i) => item.icon[i]));
+        {listNav.map((item, index) => {
+          // console.log(Object.keys(item.icon).map((i) => item.icon[i]));
           return (
-            <li key={listNav.id}>
+            <li key={index}>
               <a href={item.url}>
                 <img
                   className={item.className}
