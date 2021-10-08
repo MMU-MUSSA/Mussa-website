@@ -14,7 +14,7 @@ export class News extends Component {
           <p className="content">Now we have a new place at town campus</p>
         </>
         <div className="readmore">
-          <a href="#"> Read More</a>
+          <a href="#s"> Read More</a>
         </div>
       </div>
     );

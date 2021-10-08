@@ -3,10 +3,10 @@
     padding: 32px;
     background: rgba(4,4,4,0.6);
     backdrop-filter: blur(18px);
-    align-items: start;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .title {
     color: #ffffff;

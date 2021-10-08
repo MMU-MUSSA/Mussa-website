@@ -1,8 +1,8 @@
 .events{
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin-top: auto;
 }
 .eventsnil{
@@ -16,8 +16,8 @@
     backdrop-filter: blur(18px);
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-grow: 2;
 }
 .events2{
@@ -28,8 +28,8 @@
     backdrop-filter: blur(18px);
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-grow: 1;
 }
 .newsEvents{

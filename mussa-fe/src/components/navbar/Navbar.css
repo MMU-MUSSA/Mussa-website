@@ -4,7 +4,7 @@
   margin-right: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   font-size: 1.2rem;
 }
@@ -15,7 +15,7 @@
     list-style: none;
     text-align: center;
     width: 70vw;
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: 2rem;
 }
 
