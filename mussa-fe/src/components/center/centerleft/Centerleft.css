@@ -92,3 +92,9 @@
     width: 40px;
 
 }
+
+@media screen and (max-width: 960px){
+    .centerleft{
+        display: none;
+    }
+}
