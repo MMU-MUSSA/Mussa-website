@@ -42,7 +42,7 @@ export default function Navleft() {
         {listNav.map((item, index) => {
           // console.log(Object.keys(item.icon).map((i) => item.icon[i]));
           return (
-            <li key={index}>
+            <i key={index}>
               <a href={item.url}>
                 <img
                   className={item.className}
@@ -50,7 +50,7 @@ export default function Navleft() {
                   alt={item.text}
                 />
               </a>
-            </li>
+            </i>
           );
         })}
       </div>
