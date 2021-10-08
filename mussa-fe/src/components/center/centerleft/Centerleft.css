@@ -1,3 +1,10 @@
 .Centerleft{
     justify-content: start;
+    display: none;
+}
+
+.Centerleft > hr {
+    background: red;
+    width: 50%;
+    height: 2px;
 }

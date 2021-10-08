@@ -1,11 +1,12 @@
 .centerright{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
 }
+
 .centerleftCenterright{
-    min-width: 120px;
+    margin-left: 120px;
 }
 
 .header {

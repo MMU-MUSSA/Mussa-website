@@ -6,7 +6,6 @@ import "./Center.css";
 function Center() {
   return (
     <div className="center">
-      <Centerleft />
       <Centerright />
     </div>
   );
