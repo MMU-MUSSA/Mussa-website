@@ -20,43 +20,11 @@ const Search = () => {
 
 // Initial State
 const initialState = {
-  items: [
-    {
-      id: 0,
-      title: "Home",
-      url: "#",
-      cName: "nav-links",
-    },
-    {
-      id: 1,
-      title: "Projects",
-      url: "#",
-      cName: "nav-links",
-    },
-    {
-      id: 2,
-      title: "About",
-      url: "#",
-      cName: "nav-links",
-    },
-    {
-      id: 3,
-      title: "Gallery",
-      url: "#",
-      cName: "nav-links",
-    },
-    {
-      id: 4,
-      title: "Teams",
-      url: "#",
-      cName: "nav-links",
-    },
-    {
-      id: 5,
-      title: <Search />,
-      url: "#",
-      cName: "nav-links",
-    },
+  listItems: [
+    { id: 0, text: "Physics Meets \nPhysics", image: "physics" },
+    { id: 1, text: "Chemistry meets \nChemistry", image: "chemistry" },
+    { id: 2, text: "Computer     \nScience", image: "comp" },
+    { id: 3, text: "Articial \nInteligence", image: "ai" },
   ],
 };
 

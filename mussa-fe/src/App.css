@@ -18,6 +18,8 @@
   min-height: calc(var(--vh, 1vh) * 100);
   min-width: 100vw;
   overflow: hidden;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 279px){
