@@ -7,6 +7,7 @@ import { GlobalContext } from "../../../context/GlobalState";
 export default function Centerleft() {
   const { listItems } = useContext(GlobalContext);
   let [value, setValue] = useState(0);
+  const [clicked, setClicked] = useState(0);
 
   const changeBackground = (value) => {
     document.querySelector(".App").style.backgroundImage =
@@ -24,6 +25,12 @@ export default function Centerleft() {
   const previousClick = () => {
     setValue(value === 0 ? (value = 3) : (value -= 1));
     changeBackground(value);
+  };
+
+  const handleClick = (id) => {
+    setClicked(id);
+    changeBackground(id);
+    setValue(id);
   };
 
   return (
@@ -52,7 +59,11 @@ export default function Centerleft() {
       </>
       <div className="listItems">
         {listItems.map((item) => (
-          <b className={value === item.id ? "active" : ""} key={item.id}>
+          <b
+            onClick={() => handleClick(item.id)}
+            className={value === item.id ? "active" : ""}
+            key={item.id}
+          >
             {item.text}
           </b>
         ))}
