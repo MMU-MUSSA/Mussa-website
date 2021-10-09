@@ -122,14 +122,44 @@ const initialState = {
       text: "EVENTS",
     },
     {
-      id: 1,
+      id: 0,
       className: "about",
       text: "Back to school event / @mussa",
     },
     {
-      id: 2,
+      id: 0,
       className: "when",
       text: "SF - sat, June 19 / 11 pm - 2 am",
+    },
+    {
+      id: 1,
+      className: "title",
+      text: "HANGOUTS",
+    },
+    {
+      id: 1,
+      className: "about",
+      text: "Hackathon code event / @mussa",
+    },
+    {
+      id: 1,
+      className: "when",
+      text: "SF - sat, June 20 / 11 pm - 2 am",
+    },
+    {
+      id: 2,
+      className: "title",
+      text: "CodeCamp",
+    },
+    {
+      id: 2,
+      className: "about",
+      text: "Coding Best Practices / @mussa",
+    },
+    {
+      id: 2,
+      className: "when",
+      text: "SF - sat, June 22 / 10 pm - 3 am",
     },
   ],
   listEvents2: [
@@ -152,9 +182,21 @@ const initialState = {
     },
   ],
   dotIcons: [
-    { id: 0, className: "fas fa-circle faselected" },
-    { id: 1, className: "fas fa-circle" },
-    { id: 2, className: "fas fa-circle" },
+    {
+      id: 0,
+      className: "fas fa-circle",
+      classNameSelected: "fas fa-circle faselected",
+    },
+    {
+      id: 1,
+      className: "fas fa-circle",
+      classNameSelected: "fas fa-circle faselected",
+    },
+    {
+      id: 2,
+      className: "fas fa-circle",
+      classNameSelected: "fas fa-circle faselected",
+    },
   ],
 };
 

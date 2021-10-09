@@ -5,6 +5,10 @@
     align-items: flex-end;
     margin-top: auto;
 }
+.none {
+    display: none;
+}
+
 .eventsnil{
     background: transparent;
     min-width: 120px;

@@ -19,7 +19,15 @@ export default function Events() {
       <div className="events1">
         <>
           {listEvents1.map((item, index) => {
-            return <p className={item.className}> {item.text}</p>;
+            return (
+              <p
+                className={clicked === item.id ? item.className : "none"}
+                key={index}
+              >
+                {" "}
+                {item.text}
+              </p>
+            );
           })}
         </>
         <div className="dots">
@@ -28,10 +36,9 @@ export default function Events() {
               <i
                 onClick={() => handleClick(item.id)}
                 className={
-                  clicked === item.id
-                    ? "fas fa-circle faselected"
-                    : " fas fa-circle"
+                  clicked === item.id ? item.classNameSelected : item.className
                 }
+                key={index}
               ></i>
             );
           })}
@@ -40,7 +47,12 @@ export default function Events() {
       <div className="events2">
         <>
           {listEvents2.map((item, index) => {
-            return <p className={item.className}> {item.text}</p>;
+            return (
+              <p className={item.className} key={index}>
+                {" "}
+                {item.text}{" "}
+              </p>
+            );
           })}
         </>
       </div>
