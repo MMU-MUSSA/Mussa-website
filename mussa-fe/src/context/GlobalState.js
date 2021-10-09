@@ -52,6 +52,110 @@ const initialState = {
       icon: { githubIcon },
     },
   ],
+  listEvents: [
+    {
+      events1: {
+        title: {
+          id: 0,
+          className: "title",
+          text: "EVENTS",
+        },
+        about: {
+          id: 1,
+          className: "about",
+          text: "Back to school event / @mussa",
+        },
+        when: {
+          id: 2,
+          className: "when",
+          text: "SF - sat, June 19 / 11 pm - 2 am",
+        },
+      },
+    },
+    {
+      events2: {
+        title: {
+          id: 0,
+          className: "title",
+          text: "",
+        },
+        about: {
+          id: 1,
+          className: "about",
+          text: "",
+        },
+        when: {
+          id: 2,
+          //set class when-offset when title is blank
+          className: "when when-offset",
+          text: "SF - mon, July 3 / 6 pm - 6 am",
+        },
+      },
+    },
+  ],
+  listNews: [
+    {
+      news: {
+        title: {
+          id: 0,
+          className: "title",
+          text: "NEWS",
+        },
+        about: {
+          id: 1,
+          className: "content",
+          text: "A fresh take on our Active teams / now also ranked in <span>Red</span> <br /> Now we have a new place at town campus",
+        },
+        when: {
+          id: 2,
+          className: "readmore",
+          text: "Read More",
+          link: "#https://",
+        },
+      },
+    },
+  ],
+  listEvents1: [
+    {
+      id: 0,
+      className: "title",
+      text: "EVENTS",
+    },
+    {
+      id: 1,
+      className: "about",
+      text: "Back to school event / @mussa",
+    },
+    {
+      id: 2,
+      className: "when",
+      text: "SF - sat, June 19 / 11 pm - 2 am",
+    },
+  ],
+  listEvents2: [
+    {
+      id: 0,
+      //set className to title if there is a title
+      className: "",
+      text: "",
+    },
+    {
+      id: 1,
+      className: "about",
+      text: "Pop - up 13th event / @mussa",
+    },
+    {
+      id: 2,
+      //set class when-offset when title is blank
+      className: "when when-offset",
+      text: "SF - mon, July 3 / 6 pm - 6 am",
+    },
+  ],
+  dotIcons: [
+    { id: 0, className: "fas fa-circle faselected" },
+    { id: 1, className: "fas fa-circle" },
+    { id: 2, className: "fas fa-circle" },
+  ],
 };
 
 // Create Context
@@ -60,4 +164,23 @@ export const GlobalContext = createContext(initialState);
 // Provider Component
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
+
+  // Actions
+
+  function changeSelected(id) {
+    dispatch({
+      type: "CHANGE_SELECTED",
+      payload: id,
+    });
+  }
+
+  return (
+    <GlobalContext.Provider
+      value={{
+        changeSelected,
+      }}
+    >
+      {children}
+    </GlobalContext.Provider>
+  );
 };

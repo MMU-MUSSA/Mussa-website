@@ -23,8 +23,8 @@
 .content{
     color: rgba(255,255,255, 0.5);
     letter-spacing: 0.04em;
+    line-height: 150%;
     font-weight: bold;
-    line-height: 0%;
     font-style: normal;
     font-size: 11px;
     margin-top: auto;
@@ -44,4 +44,5 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 13px;
+    font-style: normal;
 }
