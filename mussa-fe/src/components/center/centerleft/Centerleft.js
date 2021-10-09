@@ -28,10 +28,13 @@ export default function Centerleft() {
   };
 
   const handleClick = (id) => {
-    setClicked(id);
-    changeBackground(id);
+    percBar = id;
     setValue(id);
+    changeBackground(id);
   };
+  let percBar;
+
+  const red = `"red" + percBar`;
 
   return (
     <div className="centerleft">
@@ -47,7 +50,21 @@ export default function Centerleft() {
         />
       </div>
       <>
-        <hr></hr>
+        <hr className="white" onClick={nextClick}></hr>
+        <hr
+          onClick={nextClick}
+          className={
+            value === 0
+              ? "red0"
+              : value === 1
+              ? "red1"
+              : value === 2
+              ? "red2"
+              : value === 3
+              ? "red3"
+              : "red"
+          }
+        ></hr>
       </>
       <>
         <img
@@ -64,6 +81,7 @@ export default function Centerleft() {
             className={value === item.id ? "active" : ""}
             key={item.id}
           >
+            {" "}
             {item.text}
           </b>
         ))}
