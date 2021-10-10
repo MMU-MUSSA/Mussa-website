@@ -1,6 +1,5 @@
 .centerright{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -11,7 +10,8 @@
 
 .header {
     margin-top: 3%;
-    display: column;
+    display: flex;
+    flex-direction: column;
     width: 35vw;
     font-family: "Montserrat";
     font-size:30px;
@@ -28,6 +28,15 @@
     margin-bottom: -20px;
 }
 
+.h1font{
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+.h4font{
+    font-weight: bold;
+    font-size: 35px;
+}
 
 .header p {
     width: 34vw;
@@ -36,7 +45,7 @@
     font-weight: bold;
     color: rgba(255, 255, 255, 0.75);
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 56px;
     line-height: 137.9%;
 }
 

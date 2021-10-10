@@ -198,6 +198,44 @@ const initialState = {
       classNameSelected: "fas fa-circle faselected",
     },
   ],
+  listHeader: [
+    {
+      id: 0,
+      className: "h ha h4font",
+      text: "A",
+    },
+    {
+      id: 0,
+      className: "h h4font",
+      text: "MOMENT OF",
+    },
+    {
+      id: 0,
+      className: "h h1font",
+      text: "SCIENCE",
+    },
+    {
+      id: 1,
+      className: "h ha h4font",
+      text: "LETS",
+    },
+    {
+      id: 1,
+      className: "h h4font",
+      text: "MAKE IT",
+    },
+    {
+      id: 1,
+      className: "h h1font",
+      text: "SCIENCE",
+    },
+  ],
+  headerParagraph: [
+    {
+      id: 0,
+      text: "We are happpy to introduce to you the grand new club in Multimedia University, The Science Students Association. Incoorporating all science branches pursued at Multimedia University of Kenya.",
+    },
+  ],
 };
 
 // Create Context
