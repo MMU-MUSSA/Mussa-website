@@ -201,32 +201,32 @@ const initialState = {
   listHeader: [
     {
       id: 0,
-      className: "h ha h4font",
+      className: "h h4 hMarginBottom",
       text: "A",
     },
     {
       id: 0,
-      className: "h h4font",
+      className: "h h4",
       text: "MOMENT OF",
     },
     {
       id: 0,
-      className: "h h1font",
+      className: "h h1",
       text: "SCIENCE",
     },
     {
       id: 1,
-      className: "h ha h4font",
+      className: "h h4 hMarginBottom",
       text: "LETS",
     },
     {
       id: 1,
-      className: "h h4font",
+      className: "h h4",
       text: "MAKE IT",
     },
     {
       id: 1,
-      className: "h h1font",
+      className: "h h1",
       text: "SCIENCE",
     },
   ],

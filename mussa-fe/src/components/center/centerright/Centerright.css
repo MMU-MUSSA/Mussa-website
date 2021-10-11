@@ -24,18 +24,19 @@
     margin-left: 12px;
 }
 
-.ha{
-    margin-bottom: -20px;
-}
-
-.h1font{
+.h1{
+    display: block;
+    font-size: 2.1em;
+    margin-top: 0;
+    margin-right: 0;
     font-weight: bolder;
-    font-size: 55px;
 }
-
-.h4font{
+.h4{
+    display: block;
+    font-size: 1em;
+    margin-top: 0;
+    margin-right: 0;
     font-weight: bold;
-    font-size: 35px;
 }
 
 .header p {
@@ -45,17 +46,14 @@
     font-weight: bold;
     color: rgba(255, 255, 255, 0.75);
     font-size: 12px;
-    margin-top: 56px;
+    margin-top: 20px;
     line-height: 137.9%;
 }
 
 @media screen and (max-width: 540px){
      .header {
         width: 60vw;
-        font-size: 20px;
-    }
-    .ha{
-        margin-bottom: -10px;
+        font-size: 18px;
     }
     .header p{
         color: rgba(255, 255, 255, 0.75);

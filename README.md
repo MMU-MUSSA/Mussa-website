@@ -20,11 +20,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## TODO's:
 - [x] create react app
 - [x] create components
-- [x] fix mobile responsivness
+- [x] fix mobile responsiveness
 - [x] deploy dev version on netlify
 - [x] set deploy to autobuild on commits
+- [x] merge changes and deploy main branch
+- [x] use context api
 - [ ] fix laggy button response
 - [ ] optimize loading(loading screen)
+- [ ] improve image loading
 - [ ] state and state management
 - [ ] refactor code with index file
 - [ ] connect to dom-router

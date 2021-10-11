@@ -9,6 +9,7 @@ import { GlobalContext } from "../../../context/GlobalState";
 export default function Centerright() {
   const { listHeader } = useContext(GlobalContext);
   const { listItems } = useContext(GlobalContext);
+  const { headerParagraph } = useContext(GlobalContext);
   let [value, setValue] = useState(0);
 
   const changeBackground = (value) => {
@@ -91,27 +92,24 @@ export default function Centerright() {
       <div className="header">
         {listHeader.map((item, index) => {
           return (
-            <div key={index} className={item.className}>
+            <h key={index} className={item.className}>
               {item.id === 0 && value === 0
                 ? item.text
-                : item.id === 0 && value === 1
+                : item.id === 1 && value === 1
                 ? item.text
                 : item.id === 1 && value === 2
                 ? item.text
                 : item.id === 1 && value === 3
                 ? item.text
                 : ""}
-            </div>
+            </h>
           );
         })}
 
         <div className="paragraph">
-          <p>
-            {" "}
-            We are happpy to introduce to you the grand new club in Multimedia
-            University, The Science Students Association. Incoorporating all
-            science branches pursued at Multimedia University of Kenya.{" "}
-          </p>
+          {headerParagraph.map((item, index) => {
+            return <p key={index}>{item.text}</p>;
+          })}
         </div>
       </div>
     </div>
