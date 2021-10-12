@@ -1,61 +1,239 @@
 import React, { createContext, useReducer } from "react";
 import AppReducer from "./AppReducer";
 
-const Search = () => {
-  return (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M15.8045 14.8628L11.2545 10.3129C12.1359 9.22423 12.6665 7.8409 12.6665 6.33426C12.6665 2.84229 9.82522 0.000976562 6.33325 0.000976562C2.84128 0.000976562 0 2.84226 0 6.33423C0 9.82619 2.84132 12.6675 6.33328 12.6675C7.83992 12.6675 9.22325 12.1369 10.3119 11.2555L14.8619 15.8055C14.9919 15.9355 15.1625 16.0008 15.3332 16.0008C15.5039 16.0008 15.6745 15.9355 15.8045 15.8055C16.0652 15.5448 16.0652 15.1235 15.8045 14.8628ZM6.33328 11.3342C3.57597 11.3342 1.33333 9.09154 1.33333 6.33423C1.33333 3.57691 3.57597 1.33428 6.33328 1.33428C9.0906 1.33428 11.3332 3.57691 11.3332 6.33423C11.3332 9.09154 9.09057 11.3342 6.33328 11.3342Z"
-        fill="white"
-      />
-    </svg>
-  );
-};
+import twitterIcon from "../resources/icons/twitter.svg";
+import linkedinIcon from "../resources/icons/linkedin.svg";
+import facebookIcon from "../resources/icons/facebook.svg";
+import youtubeIcon from "../resources/icons/youtube.svg";
+import githubIcon from "../resources/icons/github.svg";
 
 // Initial State
 const initialState = {
-  items: [
+  listItems: [
+    { id: 0, text: "Physics Meets \nPhysics", image: "physics" },
+    { id: 1, text: "Chemistry meets \nChemistry", image: "chemistry" },
+    { id: 2, text: "Computer     \nScience", image: "comp" },
+    { id: 3, text: "Articial \nInteligence", image: "ai" },
+  ],
+  listNav: [
     {
       id: 0,
-      title: "Home",
-      url: "#",
-      cName: "nav-links",
+      text: "twitterIcon",
+      className: "links",
+      url: "#tw",
+      icon: { twitterIcon },
     },
     {
       id: 1,
-      title: "Projects",
-      url: "#",
-      cName: "nav-links",
+      text: "linkedinIcon",
+      className: "links",
+      url: "#ln",
+      icon: { linkedinIcon },
     },
     {
       id: 2,
-      title: "About",
-      url: "#",
-      cName: "nav-links",
+      text: "facebookIcon",
+      className: "links",
+      url: "#fb",
+      icon: { facebookIcon },
     },
     {
       id: 3,
-      title: "Gallery",
-      url: "#",
-      cName: "nav-links",
+      text: "youtubeIcon",
+      className: "links",
+      url: "#yt",
+      icon: { youtubeIcon },
     },
     {
       id: 4,
-      title: "Teams",
-      url: "#",
-      cName: "nav-links",
+      text: "githubIcon",
+      className: "links",
+      url: "#git",
+      icon: { githubIcon },
+    },
+  ],
+  listEvents: [
+    {
+      events1: {
+        title: {
+          id: 0,
+          className: "title",
+          text: "EVENTS",
+        },
+        about: {
+          id: 1,
+          className: "about",
+          text: "Back to school event / @mussa",
+        },
+        when: {
+          id: 2,
+          className: "when",
+          text: "SF - sat, June 19 / 11 pm - 2 am",
+        },
+      },
     },
     {
-      id: 5,
-      title: <Search />,
-      url: "#",
-      cName: "nav-links",
+      events2: {
+        title: {
+          id: 0,
+          className: "title",
+          text: "",
+        },
+        about: {
+          id: 1,
+          className: "about",
+          text: "",
+        },
+        when: {
+          id: 2,
+          //set class when-offset when title is blank
+          className: "when when-offset",
+          text: "SF - mon, July 3 / 6 pm - 6 am",
+        },
+      },
+    },
+  ],
+  listNews: [
+    {
+      news: {
+        title: {
+          id: 0,
+          className: "title",
+          text: "NEWS",
+        },
+        about: {
+          id: 1,
+          className: "content",
+          text: "A fresh take on our Active teams / now also ranked in <span>Red</span> <br /> Now we have a new place at town campus",
+        },
+        when: {
+          id: 2,
+          className: "readmore",
+          text: "Read More",
+          link: "#https://",
+        },
+      },
+    },
+  ],
+  listEvents1: [
+    {
+      id: 0,
+      className: "title",
+      text: "EVENTS",
+    },
+    {
+      id: 0,
+      className: "about",
+      text: "Back to school event / @mussa",
+    },
+    {
+      id: 0,
+      className: "when",
+      text: "SF - sat, June 19 / 11 pm - 2 am",
+    },
+    {
+      id: 1,
+      className: "title",
+      text: "HANGOUTS",
+    },
+    {
+      id: 1,
+      className: "about",
+      text: "Hackathon code event / @mussa",
+    },
+    {
+      id: 1,
+      className: "when",
+      text: "SF - sat, June 20 / 11 pm - 2 am",
+    },
+    {
+      id: 2,
+      className: "title",
+      text: "CodeCamp",
+    },
+    {
+      id: 2,
+      className: "about",
+      text: "Coding Best Practices / @mussa",
+    },
+    {
+      id: 2,
+      className: "when",
+      text: "SF - sat, June 22 / 10 pm - 3 am",
+    },
+  ],
+  listEvents2: [
+    {
+      id: 0,
+      //set className to title if there is a title
+      className: "",
+      text: "",
+    },
+    {
+      id: 1,
+      className: "about",
+      text: "Pop - up 13th event / @mussa",
+    },
+    {
+      id: 2,
+      //set class when-offset when title is blank
+      className: "when when-offset",
+      text: "SF - mon, July 3 / 6 pm - 6 am",
+    },
+  ],
+  dotIcons: [
+    {
+      id: 0,
+      className: "fas fa-circle",
+      classNameSelected: "fas fa-circle faselected",
+    },
+    {
+      id: 1,
+      className: "fas fa-circle",
+      classNameSelected: "fas fa-circle faselected",
+    },
+    {
+      id: 2,
+      className: "fas fa-circle",
+      classNameSelected: "fas fa-circle faselected",
+    },
+  ],
+  listHeader: [
+    {
+      id: 0,
+      className: "h h4 hMarginBottom",
+      text: "A",
+    },
+    {
+      id: 0,
+      className: "h h4",
+      text: "MOMENT OF",
+    },
+    {
+      id: 0,
+      className: "h h1",
+      text: "SCIENCE",
+    },
+    {
+      id: 1,
+      className: "h h4 hMarginBottom",
+      text: "LETS",
+    },
+    {
+      id: 1,
+      className: "h h4",
+      text: "MAKE IT",
+    },
+    {
+      id: 1,
+      className: "h h1",
+      text: "SCIENCE",
+    },
+  ],
+  headerParagraph: [
+    {
+      id: 0,
+      text: "We are happpy to introduce to you the grand new club in Multimedia University, The Science Students Association. Incoorporating all science branches pursued at Multimedia University of Kenya.",
     },
   ],
 };
@@ -66,4 +244,23 @@ export const GlobalContext = createContext(initialState);
 // Provider Component
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
+
+  // Actions
+
+  function changeSelected(id) {
+    dispatch({
+      type: "CHANGE_SELECTED",
+      payload: id,
+    });
+  }
+
+  return (
+    <GlobalContext.Provider
+      value={{
+        changeSelected,
+      }}
+    >
+      {children}
+    </GlobalContext.Provider>
+  );
 };

@@ -1,41 +1,59 @@
-import React, { Component } from "react";
+import React, { useContext } from "react";
 import ellipse from "../../resources/images/ellipse.png";
-import twitter from "../../resources/icons/twitter.svg";
-import linkedin from "../../resources/icons/linkedin.svg";
-import facebook from "../../resources/icons/facebook.svg";
-import youtube from "../../resources/icons/youtube.svg";
-import github from "../../resources/icons/github.svg";
-
+import { GlobalContext } from "../../context/GlobalState";
 import "./Navleft.css";
 
-export class Navleft extends Component {
-  render() {
-    return (
-      <div className="NavleftItems">
-        <div>
-          {" "}
-          <img className="nav-image" src={ellipse} alt="Logo" />
-        </div>
+export default function Navleft() {
+  const { listNav } = useContext(GlobalContext);
+  /** 
+    For making nav social icons toggleable
+  state = { clicked: false };
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  }; 
+        **/
+  return (
+    <div className="NavleftItems">
+      <div className="topItems">
+        {" "}
+        <img className="nav-image" src={ellipse} alt="Logo" />
         <div className="nav-text">
           MU
           <br />
           SSA
         </div>
-        <div className="social">
-          <img
-            className="links"
-            src={twitter}
-            alt="twitter"
-            onClick="twitter()"
-          />
-          <img className="links" src={linkedin} alt="linkedin" />
-          <img className="links" src={facebook} alt="facebook" />
-          <img className="links" src={youtube} alt="youtube" />
-          <img className="links" src={github} alt="github" />
-        </div>
       </div>
-    );
-  }
+      <div className="social">
+        {/* 
+            Make social icons toggleable
+            <div className="social-icon" onClick={this.handleClick}> 
+            <i
+              className={this.state.clicked ? "fas fa-times" : "far fa-comment"}
+            >
+              {" "}
+            </i>
+          </div>
+                    <div
+            className={
+              this.state.clicked ? "social-menu active" : "social-menu"
+            }
+          >
+*/}
+        {listNav.map((item, index) => {
+          // console.log(Object.keys(item.icon).map((i) => item.icon[i]));
+          return (
+            <i key={index}>
+              <a href={item.url}>
+                <img
+                  className={item.className}
+                  src={Object.keys(item.icon).map((i) => item.icon[i])}
+                  alt={item.text}
+                />
+              </a>
+            </i>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
-
-export default Navleft;

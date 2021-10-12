@@ -1,16 +1,17 @@
 .centerright{
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
 }
+
 .centerleftCenterright{
-    min-width: 120px;
+    margin-left: 120px;
 }
 
 .header {
     margin-top: 3%;
-    display: column;
+    display: flex;
+    flex-direction: column;
     width: 35vw;
     font-family: "Montserrat";
     font-size:30px;
@@ -23,10 +24,20 @@
     margin-left: 12px;
 }
 
-.ha{
-    margin-bottom: -20px;
+.h1{
+    display: block;
+    font-size: 2.1em;
+    margin-top: 0;
+    margin-right: 0;
+    font-weight: bolder;
 }
-
+.h4{
+    display: block;
+    font-size: 1em;
+    margin-top: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
 
 .header p {
     width: 34vw;
@@ -35,17 +46,14 @@
     font-weight: bold;
     color: rgba(255, 255, 255, 0.75);
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 20px;
     line-height: 137.9%;
 }
 
 @media screen and (max-width: 540px){
      .header {
         width: 60vw;
-        font-size: 20px;
-    }
-    .ha{
-        margin-bottom: -10px;
+        font-size: 18px;
     }
     .header p{
         color: rgba(255, 255, 255, 0.75);

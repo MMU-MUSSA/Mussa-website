@@ -6,6 +6,9 @@ The link for the website designs and user interface
 https://www.figma.com/proto/gCGMigxrF7WR7qmCU1hKMO/Mussa-Website-New-Proporsal?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1
 
 ## React Preview
+
+[mmu-mussa.netlify.app](MMU-mussa active page)
+
 navigate to the `mussa-fe` folder
 run 
 ### `npm start`
@@ -20,13 +23,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## TODO's:
 - [x] create react app
 - [x] create components
-- [x] fix mobile responsivness
+- [x] fix mobile responsiveness
 - [x] deploy dev version on netlify
 - [x] set deploy to autobuild on commits
-- [ ] fix laggy button response
+- [x] merge changes and deploy main branch
+- [x] use context api
 - [ ] optimize loading(loading screen)
+- [ ] improve image loading
 - [ ] state and state management
-- [ ] refactor code with index file
 - [ ] connect to dom-router
 
 
