@@ -18,7 +18,7 @@ export default function Centerright() {
       require(`../../../resources/images/${listItems[value].image}.jpg`)
         .default +
       ")";
-    console.log(listItems[value]);
+    // console.log(listItems[value]);
   };
 
   const nextClick = () => {
@@ -92,7 +92,7 @@ export default function Centerright() {
       <div className="header">
         {listHeader.map((item, index) => {
           return (
-            <h key={index} className={item.className}>
+            <div key={index} className={item.className}>
               {item.id === 0 && value === 0
                 ? item.text
                 : item.id === 1 && value === 1
@@ -102,7 +102,7 @@ export default function Centerright() {
                 : item.id === 1 && value === 3
                 ? item.text
                 : ""}
-            </h>
+            </div>
           );
         })}
 
