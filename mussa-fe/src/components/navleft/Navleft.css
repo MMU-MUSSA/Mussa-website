@@ -49,7 +49,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 99%;
+  width: 89%;
   bottom: 0px;
   min-height: 150px;
   margin-bottom: 50px;
@@ -62,7 +62,7 @@
   cursor: pointer;
 }
 @media only screen and (max-width:540px) {
-    /* .NavleftItems{ display: none; } */
+  .NavleftItems{ display: none; } 
 }
 @media screen and (max-width: 960px) and ( min-width:540px ){
     .NavleftItems{

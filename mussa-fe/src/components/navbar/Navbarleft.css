@@ -1,0 +1,70 @@
+.NavbarleftItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top : 0px;
+  left: 0px;
+  width: 80px;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 1px solid transparent;
+  background: rgba(4,4,4,0.7);
+  backdrop-filter: blur(6px);
+
+}
+.none {
+    display: none ;
+}
+
+.topItemsNavbar{
+    margin-top: 50px;
+}
+
+.nav-image-navleft {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.nav-text-navleft {
+  /* MUSSA */
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 94.9%;
+  /* or 34px */
+  letter-spacing: 0.04em;
+  padding-top: 6px;
+  color: #ffffff;
+}
+
+.socialNavleft{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 89%;
+  bottom: 0px;
+  min-height: 250px;
+  margin-bottom: 100px;
+}
+
+.links {
+  display: block;
+  margin: auto;
+  margin-top: 26px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) and ( min-width:540px ){
+    .NavbarleftItems {
+        display: none;
+    }
+}

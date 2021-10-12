@@ -98,7 +98,7 @@ const initialState = {
       news: {
         title: {
           id: 0,
-          className: "title",
+          className: "titleNews",
           text: "NEWS",
         },
         about: {
@@ -233,7 +233,7 @@ const initialState = {
   headerParagraph: [
     {
       id: 0,
-      text: "We are happpy to introduce to you the grand new club in Multimedia University, The Science Students Association. Incoorporating all science branches pursued at Multimedia University of Kenya.",
+      text: "We are happy to introduce to you the grand new club in Multimedia University, The Science Students Association. Incoorporating all science branches pursued at Multimedia University of Kenya.",
     },
   ],
 };

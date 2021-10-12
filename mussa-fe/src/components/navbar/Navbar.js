@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
-import Navleft from "../navleft/Navleft";
+import Navbarleft from "./Navbarleft";
 import "./Navbar.css";
+import "./Navbarleft.css";
 
 export class Navbar extends Component {
   state = { clicked: false };
@@ -17,8 +18,8 @@ export class Navbar extends Component {
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
           ></i>
         </div>
-        <>
-          <Navleft />
+        <div className="NavbarLeftSome">
+          <Navbarleft clicked={this.state.clicked} />
           <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
             {MenuItems.map((item, index) => {
               return (
@@ -33,7 +34,7 @@ export class Navbar extends Component {
               );
             })}
           </ul>
-        </>
+        </div>
       </nav>
     );
   }

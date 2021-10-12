@@ -1,7 +1,3 @@
-/*** When making changes, check conflicts with .News.css file
- *** Changes may be overridden
- ***/
-
 .events{
     display: flex;
     flex-direction: row;
