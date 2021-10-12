@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ellipse from "../../resources/images/ellipse.png";
+import ellipse from "../../resources/images/ellipse.svg";
 import { GlobalContext } from "../../context/GlobalState";
 import "./Navleft.css";
 
@@ -24,21 +24,6 @@ export default function Navleft() {
         </div>
       </div>
       <div className="social">
-        {/*
-            Make social icons toggleable
-            <div className="social-icon" onClick={this.handleClick}>
-            <i
-              className={this.state.clicked ? "fas fa-times" : "far fa-comment"}
-            >
-              {" "}
-            </i>
-          </div>
-                    <div
-            className={
-              this.state.clicked ? "social-menu active" : "social-menu"
-            }
-          >
-*/}
         {listNav.map((item, index) => {
           // console.log(Object.keys(item.icon).map((i) => item.icon[i]));
           return (

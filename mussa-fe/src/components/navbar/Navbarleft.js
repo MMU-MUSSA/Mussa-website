@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ellipse from "../../resources/images/ellipse.png";
+import ellipse from "../../resources/images/ellipse.svg";
 import { GlobalContext } from "../../context/GlobalState";
 import "./Navbarleft.css";
 
