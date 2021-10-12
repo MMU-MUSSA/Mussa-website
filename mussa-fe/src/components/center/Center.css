@@ -2,3 +2,6 @@
     display: column;
 }
 
+@media only screen and (max-width: 540px) {
+    .center { margin: 20px auto;}
+}

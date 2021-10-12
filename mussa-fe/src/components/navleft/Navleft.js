@@ -5,12 +5,12 @@ import "./Navleft.css";
 
 export default function Navleft() {
   const { listNav } = useContext(GlobalContext);
-  /** 
+  /**
     For making nav social icons toggleable
   state = { clicked: false };
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
-  }; 
+  };
         **/
   return (
     <div className="NavleftItems">
@@ -24,9 +24,9 @@ export default function Navleft() {
         </div>
       </div>
       <div className="social">
-        {/* 
+        {/*
             Make social icons toggleable
-            <div className="social-icon" onClick={this.handleClick}> 
+            <div className="social-icon" onClick={this.handleClick}>
             <i
               className={this.state.clicked ? "fas fa-times" : "far fa-comment"}
             >
