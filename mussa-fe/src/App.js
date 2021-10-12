@@ -7,10 +7,10 @@ import Bottom from "./components/bottom/Bottom";
 function App() {
   return (
     <div className="App">
-      <Navleft />
-      <Navbar />
-      <Center />
-      <Bottom />
+    <Navleft />
+    <Navbar />
+    <Center />
+    <Bottom />
     </div>
   );
 }
