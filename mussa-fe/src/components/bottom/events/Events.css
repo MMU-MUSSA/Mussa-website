@@ -1,3 +1,7 @@
+/*** When making changes, check conflicts with .News.css file
+ *** Changes may be overridden
+ ***/
+
 .events{
     display: flex;
     flex-direction: row;
@@ -46,7 +50,7 @@
     font-size: 13px;
     font-style: normal;
     font-weight: bold;
-    margin-left: 25px;
+    margin-left: 25px !important;
     margin-bottom: auto;
 }
 .about {
