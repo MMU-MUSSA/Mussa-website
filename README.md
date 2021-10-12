@@ -7,7 +7,7 @@ https://www.figma.com/proto/gCGMigxrF7WR7qmCU1hKMO/Mussa-Website-New-Proporsal?n
 
 ## React Preview
 
-[mmu-mussa.netlify.app](MMU-mussa active page)
+[MMU-mussa active page](https://mmu-mussa.netlify.app)
 
 navigate to the `mussa-fe` folder
 run 
