@@ -1,11 +1,12 @@
 .centerright{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 
 .centerleftCenterright{
-    margin-left: 120px;
+  /* @morph edited from 120px to 100px; */
+    margin-left: 100px;
 }
 
 .header {
@@ -40,7 +41,7 @@
 }
 
 .header p {
-    width: 34vw;
+    /* width: 40vw; */
     font-family:inherit;
     font-style: normal;
     font-weight: bold;
@@ -51,15 +52,18 @@
 }
 
 @media screen and (max-width: 540px){
+  /* @Morph suggest */
+  .centerright { justify-content: normal;}
      .header {
         width: 60vw;
         font-size: 18px;
     }
     .header p{
         color: rgba(255, 255, 255, 0.75);
-        font-size: 10px;
+        /* @Morph suggest */
+        font-size: 14px;
     }
-   
+
 }
 @media screen and (min-width: 540px) and (max-width: 960px) {
     .header {
