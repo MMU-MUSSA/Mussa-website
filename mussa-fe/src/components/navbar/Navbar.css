@@ -90,7 +90,6 @@ li:hover > hr {
             left: -110%;
             opacity: 1;
             transition: all 0.3s ease;
-            background: red;
             padding: 20px 0px;
         }
         .nav-menu.active{
@@ -100,16 +99,17 @@ li:hover > hr {
             z-index:1;
         }
 
-        .nav-links {
-            margin-left: 90px;
-            text-align: center;
-            padding: 34px;
-            width: 60vw;
-            display:table;
-            /** background: rgba(255,255,255,0.15); **/
-            background: rgba(4,4,4,0.7);
-            backdrop-filter: blur(6px);
-        }
+.nav-links {
+    background: rgba(4,4,4,0.7);
+    /* -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px); */
+    margin-left: 90px;
+    text-align: center;
+    padding: 34px;
+    width: 100vw;
+    display: table;
+    margin: auto;
+}
         /* .nav-menu li:first-child{ margin-top: 20px;} */
         .nav-links:hover {
             border-radius: 0;

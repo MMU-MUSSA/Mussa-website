@@ -20,10 +20,10 @@ export class Navbar extends Component {
         ></i>
         </div>
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+        <>
+        <Navleft/>
           {MenuItems.map((item, index) => {
             return (
-              <>
-                <Navleft/>
               <li key={index}>
                 <span>
                   <a className={item.cName} href={item.url}>
@@ -32,9 +32,9 @@ export class Navbar extends Component {
                 </span>
                 <hr />
               </li>
-              </>
             );
           })}
+          </>
         </ul>
       </nav>
     );
