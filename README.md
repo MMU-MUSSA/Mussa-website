@@ -20,7 +20,7 @@
 * /\\/!n]a [@ya-suke](https://www.github.com/ya-suke "if a ninja and a samurai had a baby")
 * [PaymasterMax](https://github.com/PaymasterMax "pay master max what you owe")
 
-### TODO's:
+### TODO's  ✅:
 - [x] create react app
 - [x] create components
 - [x] fix mobile responsiveness
