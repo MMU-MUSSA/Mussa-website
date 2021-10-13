@@ -19,6 +19,7 @@
 * [King-Dorji](https://github.com/King-Dorji "your dorjiness")
 * /\\/!n]a [@ya-suke](https://www.github.com/ya-suke "if a ninja and a samurai had a baby")
 * [PaymasterMax](https://github.com/PaymasterMax "pay master max what you owe")
+* [Mc-shelton](https://github.com/mc-shelton "drops mic")
 
 ### TODO's  ✅:
 - [x] create react app
