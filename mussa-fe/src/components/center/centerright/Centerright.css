@@ -13,7 +13,7 @@
     position: fixed;
     top:0;
     left:0;
-    width: 100%;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,6 +74,11 @@
         color: rgba(255, 255, 255, 0.75);
         /* @Morph suggest */
         font-size: 14px;
+    }
+    .backgroundImage{
+        left: -70%;
+        width: auto;
+        height: 110vh;
     }
 
 }
