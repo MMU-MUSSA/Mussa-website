@@ -9,8 +9,9 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  /* min-height: calc(var(--vh, 1vh) * 100);*/
-  width: 100%;
+  min-height: calc(var(--vh, 1vh) * 100);
+  min-width: 100vw;
+  min-width: calc(var(--vw, 1vw) * 100);
 }
 
 @media screen and (max-width: 279px){

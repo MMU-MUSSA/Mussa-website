@@ -11,14 +11,16 @@
 
 .backgroundImage{
     position: fixed;
-    top:0;
+    /* top:0; */
     left:0;
-    width: 100vw;
+    width: 100%;
+    min-height: calc(var(--vh, 1vh) * 110);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
     overflow: hidden;
+    transition: background-image 3s;
 }
 
 .header {
@@ -76,14 +78,19 @@
         font-size: 14px;
     }
     .backgroundImage{
+        top: 0px;
         left: -70%;
         width: auto;
-        height: 110vh;
     }
 
 }
 @media screen and (min-width: 540px) and (max-width: 960px) {
     .header {
         width: 66vw;
+    }
+    .backgroundImage {
+        top: 0px;
+        left: -40%;
+        width: auto;
     }
 }
