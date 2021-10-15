@@ -64,7 +64,17 @@
   cursor: pointer;
 }
 @media only screen and (max-width:540px) {
-  .NavleftItems{ display: none; } 
+  .nav-text{
+      display: none;
+  }
+  .nav-image{
+      position: fixed;
+      margin-left: 25px;
+      width: 10%;
+  }
+  .social {
+      display: none;
+  }
 }
 @media screen and (max-width: 960px) and ( min-width:540px ){
     .NavleftItems{
