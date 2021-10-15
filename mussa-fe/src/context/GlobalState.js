@@ -7,13 +7,18 @@ import facebookIcon from "../resources/icons/facebook.svg";
 import youtubeIcon from "../resources/icons/youtube.svg";
 import githubIcon from "../resources/icons/github.svg";
 
+import physicsImage from "../resources/images/physics.jpg";
+import chemistryImage from "../resources/images/chemistry.jpg";
+import compImage from "../resources/images/comp.jpg";
+import aiImage from "../resources/images/ai.jpg";
+
 // Initial State
 const initialState = {
   listItems: [
-    { id: 0, text: "Physics Meets \nPhysics", image: "physics" },
-    { id: 1, text: "Chemistry meets \nChemistry", image: "chemistry" },
-    { id: 2, text: "Computer     \nScience", image: "comp" },
-    { id: 3, text: "Articial \nInteligence", image: "ai" },
+    { id: 0, text: "Physics Meets \nPhysics", image: { physicsImage } },
+    { id: 1, text: "Chemistry meets \nChemistry", image: { chemistryImage } },
+    { id: 2, text: "Computer     \nScience", image: { compImage } },
+    { id: 3, text: "Articial \nInteligence", image: { aiImage } },
   ],
   listNav: [
     {

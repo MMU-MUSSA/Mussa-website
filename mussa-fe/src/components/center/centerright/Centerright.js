@@ -3,7 +3,6 @@ import "./Centerright.css";
 import "../centerleft/Centerleft.css";
 import upIcon from "../../../resources/icons/up.svg";
 import downIcon from "../../../resources/icons/down.svg";
-
 import { GlobalContext } from "../../../context/GlobalState";
 
 export default function Centerright() {
@@ -12,31 +11,30 @@ export default function Centerright() {
   const { headerParagraph } = useContext(GlobalContext);
   let [value, setValue] = useState(0);
 
-  const changeBackground = (value) => {
-    document.querySelector(".App").style.backgroundImage =
-      "url(" +
-      require(`../../../resources/images/${listItems[value].image}.jpg`)
-        .default +
-      ")";
-    // console.log(listItems[value]);
-  };
+  //console.log(Object.keys(listItems[value].image).map((i) => listItems[value].image[i])[0]);
 
   const nextClick = () => {
     setValue(value === 3 ? (value = 0) : (value += 1));
-    changeBackground(value);
   };
   const previousClick = () => {
     setValue(value === 0 ? (value = 3) : (value -= 1));
-    changeBackground(value);
   };
 
   const handleClick = (id) => {
     setValue(id);
-    changeBackground(id);
   };
 
   return (
     <div className="centerright">
+      <img
+        className="backgroundImage"
+        src={
+          Object.keys(listItems[value].image).map(
+            (i) => listItems[value].image[i]
+          )[0]
+        }
+        alt="imghere"
+      />
       <div className="centerleftCenterright">
         <div className="centerleft">
           <div className="listNumber">

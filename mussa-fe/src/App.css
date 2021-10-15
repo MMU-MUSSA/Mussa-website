@@ -5,21 +5,12 @@
   font-family: "Montserrat", sans-serif;
 }
 .App {
-  /* position: absolute; */
-  background: url(./resources/images/Rectangle.png)
-  ;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  min-height: calc(var(--vh, 1vh) * 100);
-  min-width: 100vw;
-  overflow: hidden;
-  -webkit-transition: background-image 0.3s ease-in-out;
-  transition: background-image 0.3s ease-in-out;
+  /* min-height: calc(var(--vh, 1vh) * 100);*/
+  width: 100%;
 }
 
 @media screen and (max-width: 279px){
