@@ -28,9 +28,10 @@
 - [x] deploy dev version on netlify
 - [x] set deploy to autobuild on commits
 - [x] merge changes and deploy main branch
-- [x] use context api/ hooks
-- [ ] optimize loading(loading screen)
-- [ ] improve image loading
+- [x] use context api/ swicth to mostly hooks
+- [x] improve image loading
+- [ ] fix mobile design
+- [ ] preload images in cache and use react-lottie
 - [ ] state and state management
 - [ ] connect to dom-router
 
