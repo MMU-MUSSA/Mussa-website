@@ -32,6 +32,7 @@
 - [x] improve image loading
 - [x] fix mobile design
 - [ ] make pages smoother on mobile
+- [ ] make animations smoother on mobile
 - [ ] preload images in cache and use react-lottie
 - [ ] state and state management
 - [ ] connect to dom-router
