@@ -1,3 +1,6 @@
 .bottom{
     display: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    align-content: flex-end;
     }
