@@ -30,7 +30,8 @@
 - [x] merge changes and deploy main branch
 - [x] use context api/ swicth to mostly hooks
 - [x] improve image loading
-- [ ] fix mobile design
+- [x] fix mobile design
+- [ ] make pages smoother on mobile
 - [ ] preload images in cache and use react-lottie
 - [ ] state and state management
 - [ ] connect to dom-router
